@@ -1,0 +1,36 @@
+# Copy this file to paths.yaml and update paths for your local machine.
+# Do not commit paths.yaml if it contains sensitive local data locations.
+
+project_root: /path/to/project
+
+inputs:
+  prepared_subject_dir: /path/to/prepared_subject_dirs
+  sfc_txt_dir: /path/to/outputs/sfc_pca_450_t288/sfc_txt_files
+  clinical_table: /path/to/anonymized_clinical_scores.csv
+  participant_type_table: /path/to/anonymized_participant_groups.tsv
+  lesion_regions_dir: /path/to/extracted_lesion_regions
+  tract_probability_dir: /path/to/hcp1065_prob_coverage_nifti/prob
+
+atlas:
+  combined_450_roi_nii: /path/to/Schaefer400_Tian50_MNI152_1mm.nii.gz
+  combined_450_roi_label_txt: /path/to/Schaefer400_Tian50_label.txt
+  schaefer_400_centroid_csv: /path/to/Schaefer2018_400Parcels_7Networks_centroids.csv
+  euclidean_distance_matrix_450_mat: /path/to/euclidean_distance_matrix_450.mat
+  mni_background_nii: /path/to/MNI152_T1_1mm_brain.nii.gz
+
+outputs:
+  sfc_results_dir: outputs/sfc_pca_450_t288
+  group_maps_dir: outputs/group_sfc_maps
+  group_statistics_dir: outputs/group_statistics
+  language_correlation_dir: outputs/language_correlations
+  lesion_disconnectome_dir: outputs/lesion_disconnectome
+  asymmetry_dir: outputs/asymmetry
+
+sfc:
+  roi_number: 450
+  cortical_roi_number: 400
+  subcortical_roi_number: 50
+  n_components: 4
+  explained_variance_threshold: 0.8
+  target_real_time_seconds: 288
+  remove_first_n_volumes: 10

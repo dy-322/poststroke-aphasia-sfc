@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local config
+configs/paths.yaml
+.env
+
+# Data and generated outputs
+data/
+outputs/
+results/
+figures/
+*_results/
+*_outputs/
+batch_results*/
+single_subject_results*/
+correlation_analysis_results/
+disconnectome_mediation_results/
+asymmetry_analysis_results/
+
+# Neuroimaging and large intermediate files
+*.nii
+*.nii.gz
+*.mat
+*.npy
+*.npz
+*.pkl
+*.h5
+*.hdf5
+
+# Clinical/source data tables
+*.xlsx
+*.xls
+matched_subjects*.csv
+participants*.csv
+participants*.txt
+
+# Generated figures and archives
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.pdf
+*.ai
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
